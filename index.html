@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sorting Visualizer</title>
+
+<link rel="stylesheet" type="text/css" href="sorting.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="base">
+        <h1 style="font-size: 24px;"> SORTING VISUALIZER</h1>
+
+        <div class="navbar">
+            <div class="sorting-btn">
+                <button class="btn" onclick="generate()" id="Button1"> New Array</button>
+            </div>
+            
+            <div class="sorting-btn">
+                <button class="btn" onclick="BubbleSort(),disable()" id="Button2"> Bubble Sort</button>
+                <button class="btn" onclick="InsertionSort(),disable()" id="Button3">Insertion sort</button>
+                <button class="btn" onclick="StartmergeSort(),disable()" id="Button4"> Merge Sort</button>
+                <button class="btn"onclick="StartquickSort(),disable()" id="Button5"> Quick Sort</button>
+                <button class="btn" onclick="SelectionSort(),disable()" id="Button6"> Selection Sort</button>
+            </div>
+        </div>
+        
+        <div id="data-container"></div> 
+        <div class="footer">
+            <div class="slidecontainer">
+                Bars: 
+                <input type="range" min="3" max="100" value="10" class="slider" id="myRange">
+            </div>
+            <div class="slidecontainer">
+                Delay:<input type="range" min="50" max="2000" value="300" class="slider" id="mySpeed">
+            </div>
+        </div>
+
+    </div>
+    <script src="js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/merge.js"></script>
+    <script src="js_files/quick.js"></script>
+    <script src="js_files/selection.js"></script>
+    <script src="js_files/sorting.js"></script>
+</body>
+
+</html>
