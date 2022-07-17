@@ -22,6 +22,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #data-container {
     display: flex;
@@ -41,6 +42,7 @@ body{
     font-size: 0px;
 }
 .sorting-btn{
+    Margin-bottom:5px;
     padding: 5px;
     width: max-content;
     border-radius: 5px;
