@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>Sorting Visualizer</title>
 
-<link rel="stylesheet" type="text/css" href="sorting.css">
-
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:800px)" href="sorting.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,11 +23,11 @@
             </div>
             
             <div class="sorting-btn">
-                <button class="btn" onclick="BubbleSort(),disable()" id="Button2"> Bubble Sort</button>
-                <button class="btn" onclick="InsertionSort(),disable()" id="Button3">Insertion sort</button>
-                <button class="btn" onclick="StartmergeSort(),disable()" id="Button4"> Merge Sort</button>
-                <button class="btn"onclick="StartquickSort(),disable()" id="Button5"> Quick Sort</button>
-                <button class="btn" onclick="SelectionSort(),disable()" id="Button6"> Selection Sort</button>
+                <button class="btn" onclick="BubbleSort(),disable()" id="Button2"> Bubble</button>
+                <button class="btn" onclick="InsertionSort(),disable()" id="Button3">Insertion</button>
+                <button class="btn" onclick="StartmergeSort(),disable()" id="Button4"> Merge</button>
+                <button class="btn"onclick="StartquickSort(),disable()" id="Button5"> Quick</button>
+                <button class="btn" onclick="SelectionSort(),disable()" id="Button6"> Selection</button>
             </div>
         </div>
         
@@ -35,7 +35,7 @@
         <div class="footer">
             <div class="slidecontainer">
                 Bars: 
-                <input type="range" min="3" max="100" value="10" class="slider" id="myRange">
+                <input type="range" min="3" max="50" value="10" class="slider" id="myRange">
             </div>
             <div class="slidecontainer">
                 Delay:<input type="range" min="50" max="2000" value="300" class="slider" id="mySpeed">
