@@ -22,7 +22,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap:wrap;
 }
 #data-container {
     display: flex;
